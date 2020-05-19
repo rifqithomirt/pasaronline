@@ -1,0 +1,51 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 30px;
+    background-color: #353b48;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 90%;
+    caret-color: transparent;
+    line-height: 30px;
+    font-size: 1em;
+}
+
+.card-title {
+    font-size: 1em;
+}
+
+.harga_ori {
+    text-decoration: line-through;
+}
+
+#unit {
+    font-size: 0.7em;
+}
+
+.emptyness {
+    height: 50px;
+}
+
+.price {
+    font-size: 0.8em;
+    padding: 0;
+    margin:0;
+}
