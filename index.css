@@ -49,3 +49,17 @@ html {
     padding: 0;
     margin:0;
 }
+
+.produk-terkair-list {
+    width: 100%;
+    margin-top: 0.5em;
+    list-style-type: none;
+    padding-left: 0em;
+    display: -webkit-box;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.produk-terkair-list li {
+    
+}
