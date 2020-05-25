@@ -13,19 +13,20 @@
 </head>
 
 <body>
-    <div class="ml-2 mt-2 mb-2">
-        <div class="d-flex align-items-start">
-            <div class="searchbar">
-                <input class="search_input" type="text" placeholder="Cari..." />
-                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+    <div class="pl-2 d-flex header">
+        <div class="mr-auto p-2">
+            <div>
+                <h5 class="my-0">Pasar Online</h5>
             </div>
-
-            <div class="icon_group mx-2 mt-1">
-              <i class="fa fa-bell"></i>
+        </div>
+        <div class="p-2">
+            <div class="mx-2">
+                <i class="fas fa-search"></i>
+                <i class="fa fa-bell"></i>
             </div>
         </div>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide mt-2 mb-2" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mt-1 mb-2" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -33,7 +34,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://dummyimage.com/600x400/000/fff" alt="First slide">
+                <img class="d-block w-100" src="https://dummyimage.com/600x400/fff/fff" alt="First slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="https://dummyimage.com/600x400/000/fff" alt="Second slide">
@@ -120,18 +121,20 @@
           <div class="col"></div>
         </div>
     </div>
-    <div>
-        <nav class="navbar fixed-bottom bg-light">
+    <div class="">
+        <nav class="bottom-navigation navbar fixed-bottom bg-light">
           <div class="container-fluid">
-            <a href="#home" class="active">
-              <i class="fas fa-home"></i> Home
+            <a href="./index.html" class="active">
+              <i class="fa fa-home"></i>
             </a>
-            <a href="#news">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Keranjang
-                
-                <span class="badge badge-success">4</span>
+            <a href="./cart.html">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <sup><span class="badge badge-success" >4</span>
+                </sup>
             </a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
           </div>
         </nav>
     </div>

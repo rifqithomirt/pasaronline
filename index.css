@@ -6,15 +6,12 @@ html {
     padding: 0;
 }
 
-.searchbar {
-    width: 100%;
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 30px;
-    background-color: #353b48;
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+.header{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.9);
+}
+
+.bottom-navigation {
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .search_input {
@@ -60,6 +57,20 @@ html {
     white-space: nowrap;
 }
 
-.produk-terkair-list li {
-    
+.item-cart {
+    font-size: 0.8em;
+    padding: 0px;
+}
+
+.image-cart {
+    display: inline;
+}
+
+.total-items {
+    width: 2em;
+    font-size: 0.8em;
+}
+
+.item-name-cart {
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }

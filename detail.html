@@ -13,16 +13,15 @@
 </head>
 
 <body>
-    <div class="ml-2 mt-2 mb-2">
-        <div class="d-flex align-items-start">
-        	<div class="icon_group mx-2 mt-1">
-        		<a href="./index.html">
+    <div class="pl-2 d-flex header">
+        <div class="mr-auto p-2">
+            <a href="./index.html">
         			<i class="fas fa-chevron-left"></i>
         		</a>
-            </div>
-            <div class="searchbar mx-2">
-                <input class="search_input" type="text" placeholder="Cari..." />
-                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="p-2">
+            <div class="mx-2">
+                <i class="fas fa-search"></i>
             </div>
         </div>
     </div>
@@ -30,11 +29,14 @@
     	<div class="detail-img">
     		<img class="card-img-top" src="https://dummyimage.com/300x200/000/fff" alt="Card image cap">
     	</div>
-    	<div class="detail-desc px-2">
+    	<div class="detail-desc px-4">
+    		<div>
+    			<h5 class="">Title</h5>
+    		</div>
     		<p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis</p>
     	</div>
     	<div class="detail-price px-2">
-	    	<div class="row">
+	    	<div class="row mx-0">
 	    		<div class="col">
 	    			<p class="price harga_ori">Rp. 123.456</p>
 	            	<div>
@@ -95,17 +97,21 @@
         </div>
     	</div>
     </div>
-    <div>
-        <nav class="navbar fixed-bottom bg-light">
+    <div class="">
+        <nav class="bottom-navigation navbar fixed-bottom bg-light">
           <div class="container-fluid">
-            <a href="#home" class="active">
-              <i class="fas fa-home"></i> Home
+            <a href="./index.html" class="active">
+              <i class="fa fa-home"></i>
             </a>
-            <a href="#news">
-            	<i class="fa fa-shopping-cart" aria-hidden="true"></i>Keranjang
-            	<span class="badge badge-success">4</span>
+            <a href="./cart.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <sup>
+                	<span class="badge badge-success" >4</span>
+                </sup>
             </a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
           </div>
         </nav>
     </div>
