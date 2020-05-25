@@ -57,9 +57,10 @@ html {
     white-space: nowrap;
 }
 
-.item-cart {
+.item-name-cart {
     font-size: 0.8em;
     padding: 0px;
+    font-family: 'Arial', sans-serif;
 }
 
 .image-cart {
@@ -67,10 +68,25 @@ html {
 }
 
 .total-items {
-    width: 2em;
+    width: 1.6em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.cart-plus, .cart-minus {
+    width: 1em;
+    text-align: center;
+}
+
+.plus-minus {
+    text-align: center;
+    height: 0.5em;
+}
+
+.total-cart-price {
     font-size: 0.8em;
 }
 
-.item-name-cart {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+.cart-item-detail {
+    width: 100%;
 }
