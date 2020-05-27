@@ -73,15 +73,10 @@ html {
     text-align: center;
 }
 
-.cart-plus, .cart-minus {
-    width: 1em;
-    text-align: center;
+.plus-minus div i {
+    cursor: pointer;
 }
 
-.plus-minus {
-    text-align: center;
-    height: 0.5em;
-}
 
 .total-cart-price {
     font-size: 0.8em;
@@ -89,4 +84,20 @@ html {
 
 .cart-item-detail {
     width: 100%;
+}
+
+body {
+    animation: fadeInRight 0.2s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -14,12 +14,12 @@
 
 <body>
     <div class="pl-2 d-flex header">
-        <div class="p-2">
+        <div class="">
             <a href="./index.html">
         			<i class="fas fa-chevron-left"></i>
         		</a>
         </div>
-        <div class="p-2">
+        <div class="pl-2">
             <div class="mx-2">
                 <h5>Daftar Belanja</h5>
             </div>
@@ -27,31 +27,34 @@
     </div>
     <div class="container my-2">
     	<ul class="list-group ">
-          <li class="list-group-item p-1">
-              <div class="image-cart d-flex">
-                <div class="p-1">
-                    <img src="https://dummyimage.com/64x64/20c73c/fff">
-                </div>
-                <div class="p-1 cart-item-detail">
-                    <p class="item-name-cart m-1">Kangkung Belanda</p>
-                    <div class="total-cart row">
-                        <div class="col total-cart-price">
-                            <p class="mb-0"><span>Rp.</span>&nbsp<span>20000</span></p>
+          <li class="list-group-item px-1 py-2">
+              <div class="row m-0">
+                    <div class="col-2 col-xs-2 p-0">
+                        <img class="img-fluid" src="https://dummyimage.com/64x64/20c73c/fff">
+                    </div>
+                    <div class="col-7 col-xs-7 px-1">
+                        <div class="row">
+                            <div class="col text-truncate">
+                                <p class="mb-0">Kangkung Belanda</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <div class="p-1 plus-minus">
-                                <div class="input-group">
-                                    <span class="border cart-plus">+</span>
-                                    <input class="total-items" type="text" name="jumlah" value="20">
-                                    <span class="border cart-minus">-</span>
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-0"><span>Rp.</span>&nbsp<span>20000</span></p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-3 col-xs-3 p-0">
+                        <div class="p-1 plus-minus  float-right">
+                                <div class="input-group">
+                                    <i class="button-plus rounded-circle fas fa-plus fa-xs my-auto p-1 bg-success" data-field="quantity"></i>
+                                    <input class="total-items border-0 bg-white quantity-field" type="text" name="quantity" value="20" disabled="disabled">
+                                    <i class="button-minus rounded-circle fas fa-minus fa-xs my-auto p-1 bg-danger" data-field="quantity"></i>
+                                </div>
+                            </div>
+                    </div>
                 </div>
-              </div>
           </li>
-          <li class="list-group-item">Morbi leo risus</li>
           <li class="list-group-item">Porta ac consectetur ac</li>
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
@@ -78,6 +81,42 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function incrementValue(e) {
+          e.preventDefault();
+          var fieldName = $(e.target).data('field');
+          var parent = $(e.target).closest('div');
+          var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+          if (!isNaN(currentVal)) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+          } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+          }
+        }
+
+        function decrementValue(e) {
+          e.preventDefault();
+          var fieldName = $(e.target).data('field');
+          var parent = $(e.target).closest('div');
+          var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+          if (!isNaN(currentVal) && currentVal > 0) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+          } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+          }
+        }
+
+        $('.input-group').on('click', '.button-plus', function(e) {
+            console.log('click');
+          incrementValue(e);
+        });
+
+        $('.input-group').on('click', '.button-minus', function(e) {
+          decrementValue(e);
+        });
+    </script>
 </body>
 
 </html>
