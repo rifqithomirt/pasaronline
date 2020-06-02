@@ -14,14 +14,14 @@
 
 <body>
     <div class="pl-2 d-flex header">
-        <div class="">
+        <div class="p-2">
             <a href="./index.html">
         			<i class="fas fa-chevron-left"></i>
         		</a>
         </div>
-        <div class="pl-2">
+        <div class="p-2">
             <div class="mx-2">
-                <h5>Daftar Belanja</h5>
+                <h5 class="my-0">Daftar Belanja</h5>
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-3 p-0">
-                        <div class="p-1 plus-minus  float-right">
+                        <div class="p-1 plus-minus float-right">
                                 <div class="input-group">
                                     <i class="button-plus rounded-circle fas fa-plus fa-xs my-auto p-1 bg-success" data-field="quantity"></i>
                                     <input class="total-items border-0 bg-white quantity-field" type="text" name="quantity" value="20" disabled="disabled">
@@ -55,9 +55,21 @@
                     </div>
                 </div>
           </li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+    </div>
+    <div class="bg-primary container fixed-bottom pb-5">
+        <div class=" row py-2">
+            <div class="col-8">
+                <h5>Total Belanja</h5>
+            </div>
+            <div class="col float-right">
+                <h5>Rp. <span class="total-belanja float-right">20.000</span></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-light btn-lg btn-block">Checkout</button>
+            </div>            
+        </div>
     </div>
     <div class="">
         <nav class="bottom-navigation navbar fixed-bottom bg-light">
@@ -117,6 +129,7 @@
           decrementValue(e);
         });
     </script>
+    <script type="text/javascript" src="./cart.js"></script>
 </body>
 
 </html>
